@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SpartaFX</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Spinner Início -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner Fim -->
+
+        <!-- Navbar & Hero Início -->
+        <div class="container-fluid nav-bar sticky-top px-4 py-2 py-lg-0 bg-ancora">
+            <nav class="navbar navbar-expand-lg navbar-light sombra-inferior">
+                <a href="index.html" class="navbar-brand p-2">
+                    <img src="img/logo_ancora.png" alt="Logo" width="250px" height="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Início</a>
+                        <a href="#sobre" class="nav-item nav-link">Sobre</a>
+                        <a href="#servicos" class="nav-item nav-link">Serviços</a>
+                        <a href="#" class="nav-item nav-link">Contato</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mais</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Vantagens</a>
+                                <a href="#" class="dropdown-item">Tipos de Bens</a>
+                                <a href="#" class="dropdown-item">Simule Agora</a>
+                                <a href="#" class="dropdown-item">Nossa Equipe</a>
+                                <a href="#" class="dropdown-item">Depoimentos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-icon d-none d-xl-flex justify-content-center me-3">
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 flex-shrink-0">Simule Agora</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero Fim -->
+
+        <!-- Carrosel Início -->
+        <div class="header-carousel owl-carousel sombra-inferior">
+            <div class="header-carousel-item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/carrossel-tamanho-mobile.png">
+                            <source media="(max-width: 1200px)" srcset="img/carrossel-tamanho-pequeno.png">
+                            <source media="(max-width: 1500px)" srcset="img/carrossel-tamanho-medio.png">
+                            <img src="img/carrossel.png" class="img-fluid w-100" alt="Image">
+                        </picture>
+                <div class="carousel-caption">
+                    <div class="container align-items-center py-4">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-xl-7 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="text-start">
+                                    <h4 class="text-primary text-uppercase fw-bold mb-4">Bem-vindo à Sparta FX Consórcios</h4>
+                                    <h1 class="display-4 text-uppercase text-white mb-4">Realize seus sonhos com o consórcio ideal</h1>
+                                    <p class="mb-4 fs-5">
+                                        Com parceria oficial da Âncora Consórcios, oferecemos planos acessíveis para veículos, imóveis e serviços. Sem juros, com transparência e credibilidade.
+                                    </p>
+                                    <div class="d-flex flex-shrink-0">
+                                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Simule Agora</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;">
+                                <div class="ticket-form p-5">
+                                    <h2 class="text-white text-uppercase mb-4" style="text-shadow: 4px 4px 5px rgb(0, 0, 0, 0.9)">Simule seu plano</h2>
+                                    <form>
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <input type="text" class="form-control border-0 py-2" id="name" placeholder="Seu nome">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="email" class="form-control border-0 py-2" id="email" placeholder="Seu e-mail">
+                                            </div>
+                                            <div class="col-12 col-xl-6">
+                                                <input type="tel" class="form-control border-0 py-2" id="phone" placeholder="Telefone">
+                                            </div>
+                                            <div class="col-12">
+                                                <select class="form-select border-0 py-2" aria-label="Default select example">
+                                                    <option selected>Escolha o tipo de consórcio</option>
+                                                    <option value="1">Veículos</option>
+                                                    <option value="2">Imóveis</option>
+                                                    <option value="3">Serviços</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <input class="form-control border-0 py-2" type="number" placeholder="Valor desejado">
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary w-100 py-2 px-5">Solicitar Simulação</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carrosel Fim -->
+        
+        <!-- Vantagens Início -->
+        <div class="container-fluid feature py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item">
+                            <img src="img/vantagem-1.png" class="img-fluid rounded w-100" alt="Planejamento Financeiro">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">Planejamento Financeiro</h4>
+                                    <p class="text-white">Ajudamos você a organizar suas finanças para alcançar seus objetivos através do consórcio, com parcelas que cabem no seu bolso.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Saiba Mais <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item">
+                            <img src="img/vantagem-2.png" class="img-fluid rounded w-100" alt="Diversidade de Planos">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">Diversidade de Planos</h4>
+                                    <p class="text-white">Oferecemos consórcios para veículos, imóveis e serviços, com opções flexíveis para você escolher o que melhor atende às suas necessidades.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Saiba Mais <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item">
+                            <img src="img/vantagem-3.png" class="img-fluid rounded w-100" alt="Parceria Confiável">
+                            <div class="feature-content p-4">
+                                <div class="feature-content-inner">
+                                    <h4 class="text-white">Parceria Confiável</h4>
+                                    <p class="text-white">Trabalhamos com a Âncora Consórcios para garantir segurança, transparência e a melhor experiência na hora de realizar seu sonho.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Saiba Mais <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vantagens Fim -->
+
+        <!-- Sobre Início -->
+        <div class="container-fluid about pb-5" id="sobre">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">Sobre a Sparta FX Consórcios e Investimentos</h4>
+                            <h1 class="display-5 mb-4">Tradição, segurança e inovação em consórcios</h1>
+                            <p class="mb-5">
+                                A Sparta FX Consórcios e Investimentos atua há mais de 10 anos no mercado, oferecendo soluções financeiras com excelência, agora em parceria com a Âncora Consórcios — referência nacional em solidez e credibilidade. Com um portfólio ampliado, oferecemos planos de consórcio para veículos, imóveis e serviços, sempre com atendimento personalizado, segurança e transparência.
+                            </p>
+                            <div class="alert alert-info text-center mt-2 mb-5">
+                                Agora somos <strong>Sparta FX Consórcios e Investimentos</strong>, em parceria com a <strong>Âncora Consórcios</strong>!
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-hand-holding-usd fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Planos acessíveis</h4>
+                                            <p>Parcelas que cabem no seu orçamento e facilitam sua conquista.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-users fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Equipe especializada</h4>
+                                            <p>Consultores prontos para ajudar na melhor escolha para você.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-shield-alt fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Segurança e transparência</h4>
+                                            <p>Parceria oficial com a Âncora Consórcios, garantindo confiança.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="me-3"><i class="fas fa-chart-line fa-3x text-primary"></i></div>
+                                        <div>
+                                            <h4>Resultados comprovados</h4>
+                                            <p>Milhares de clientes satisfeitos realizando seus sonhos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="position-relative rounded">
+                            <div class="rounded" style="margin-top: 40px;">
+                                <div class="row g-0">
+                                    <div class="col-lg-12">
+                                        <div class="rounded mb-4">
+                                            <img src="img/sobre.png" class="img-fluid rounded w-100" alt="Equipe Sparta FX Consórcios">
+                                        </div>
+                                        <div class="row gx-4 gy-0">
+                                            <div class="col-6">
+                                                <div class="counter-item bg-ancora2 rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-users fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">5</span>
+                                                        <span class="h2 fw-bold text-white">mil +</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Clientes Satisfeitos</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="counter-item bg-ancora rounded text-center p-4 h-100">
+                                                    <div class="counter-item-icon mx-auto mb-3">
+                                                        <i class="fas fa-award fa-3x text-white"></i>
+                                                    </div>
+                                                    <div class="counter-counting mb-3">
+                                                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">10</span>
+                                                        <span class="h1 fw-bold text-white"> +</span>
+                                                    </div>
+                                                    <h5 class="text-white mb-0">Anos de Experiência</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded bg-ancora2 p-4 position-absolute d-flex justify-content-center" style="width: 60%; height: 60px; top: -40px; left: 50%; transform: translateX(-50%);">
+                                <h3 class="mb-0 text-white" style="margin-top: -12px;">Há mais de 10 anos</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sobre Fim -->
+
+        <!-- Serviços Início -->
+        <div class="container-fluid service py-5 sombra-inferior" id="servicos">
+            <div class="container service-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nossos Serviços</h4>
+                    <h1 class="display-5 text-white mb-4">Conheça as opções que oferecemos para você</h1>
+                    <p class="mb-0 text-white">
+                        Oferecemos planos de consórcio flexíveis para veículos, imóveis e serviços, com atendimento personalizado e segurança garantida pela nossa parceria com a Âncora Consórcios.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+                    <div class="col-md-10 col-lg-8 col-xl-8 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-days p-4">
+                            <div class="py-2 border-bottom border-top d-flex align-items-center justify-content-between flex-wrap">
+                                <h4 class="mb-0 pb-2 pb-sm-0">Atendimento Comercial</h4> 
+                                <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>Segunda a Sexta: 09:00 - 18:00</p>
+                            </div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap">
+                                <h4 class="mb-0 pb-2 pb-sm-0">Suporte Online</h4> 
+                                <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>Segunda a Sexta: 08:00 - 20:00</p>
+                            </div>
+                            <div class="py-2 border-bottom d-flex align-items-center justify-content-between flex-shrink-1 flex-wrap">
+                                <h4 class="mb-0">Atendimento Telefônico</h4> 
+                                <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>Segunda a Sexta: 08:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-1 col-lg-2 col-xl-2"></div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-car fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Consórcio de Veículos</a>
+                                <p class="mb-0">Planos para carros, motos e caminhões, com parcelas que cabem no seu bolso.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-home fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Consórcio de Imóveis</a>
+                                <p class="mb-0">Realize o sonho da casa própria com planos flexíveis e sem juros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-cogs fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Consórcio de Serviços</a>
+                                <p class="mb-0">Planos para aquisição de serviços como reformas, equipamentos e muito mais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item p-4">
+                            <div class="service-content">
+                                <div class="mb-4">
+                                    <i class="fas fa-headset fa-4x"></i>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Atendimento Personalizado</a>
+                                <p class="mb-0">Equipe pronta para tirar suas dúvidas e ajudar na melhor escolha.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Serviços Fim -->
+
+        <!-- Planos de Consórcio Início -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-12 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="packages-item h-100">
+                            <h4 class="text-primary">Planos de Consórcio</h4>
+                            <h1 class="display-5 mb-4">Escolha o melhor plano para o seu objetivo</h1>
+                            <p class="mb-4">Contamos com diversas opções de consórcios para veículos, imóveis e serviços, com parcelas acessíveis e sem juros. Realize seu sonho com a segurança da nossa parceria com a Âncora Consórcios.</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Planos flexíveis e personalizados</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Atendimento especializado</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Sem juros e com segurança</p>
+                            <p class="mb-5"><i class="fa fa-check text-primary me-2"></i>Possibilidade de contemplação antecipada</p>
+                            <a href="#" class="btn btn-primary rounded-pill py-3 px-5">Solicite uma orçamento</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="pricing-item bg-dark rounded text-center p-5 h-100">
+                            <div class="pb-4 border-bottom">
+                                <h2 class="mb-4 text-primary">Consórcio de Veículos</h2>
+                                <p class="mb-4">Planos para carros, motos e utilitários com parcelas que cabem no seu bolso.</p>
+                                <h2 class="mb-0 text-primary">A partir de <span class="text-body fs-5 fw-normal">R$ 350,00/mês</span></h2>
+                            </div>
+                            <div class="py-4">
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Parcelas acessíveis</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Sem juros</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Possibilidade de lance</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>Atendimento personalizado</p>
+                            </div>
+                            <a href="#" class="btn btn-light rounded-pill py-3 px-5">Quero este plano</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="pricing-item bg-ancora2 rounded text-center p-5 h-100">
+                            <div class="pb-4 border-bottom">
+                                <h2 class="text-dark mb-4">Consórcio de Imóveis</h2>
+                                <p class="text-white mb-4">Realize o sonho da casa própria com planos sem juros e flexíveis.</p>
+                                <h2 class="text-dark mb-0">A partir de <span class="text-white fs-5 fw-normal">R$ 500,00/mês</span></h2>
+                            </div>
+                            <div class="text-white py-4">
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Parcelas acessíveis</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Sem taxas abusivas</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Planos personalizados</p>
+                                <p class="mb-4"><i class="fa fa-check text-dark me-2"></i>Atendimento exclusivo</p>
+                            </div>
+                            <a href="#" class="btn btn-dark rounded-pill py-3 px-5">Quero este plano</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Planos de Consórcio Fim -->
+
+        <!-- Benefícios Início -->
+        <div class="container-fluid attractions py-5">
+            <div class="container attractions-section py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nossos Benefícios</h4>
+                    <h1 class="display-5 text-white mb-4">Benefícios e Diferenciais da Âncora Consórcios</h1>
+                    <p class="text-white mb-0">Conheça os principais benefícios que oferecemos para você realizar seus sonhos com segurança e economia.</p>
+                </div>
+                <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/beneficio-1.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Consórcio Seguro</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/beneficio-2.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Planos Flexíveis</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/beneficio-3.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name" style="font-size: 22px;">Atendimento Especializado</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
+                        <img src="img/beneficio-4.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Possibilidade de Lance</a>
+                    </div>
+                    <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/beneficio-5.png" class="img-fluid rounded w-100" alt="">
+                        <a href="#" class="attractions-name">Parcelas Acessíveis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Benefícios Fim -->
+
+        <!-- Galeria Início -->
+        <div class="container-fluid gallery pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nossa Galeria</h4>
+                    <h1 class="display-5 mb-4">Momentos Registrados com a Âncora Consórcios</h1>
+                    <p class="mb-0">
+                        Conheça alguns momentos especiais que ilustram nossa parceria de sucesso e o atendimento dedicado que oferecemos aos nossos clientes.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <img src="img/galeria-1.png" class="img-fluid rounded w-100 h-100" alt="Galeria Imagem 1">
+                            <div class="search-icon">
+                                <a href="img/galeria-1.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-1"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <img src="img/galeria-2.png" class="img-fluid rounded w-100 h-100" alt="Galeria Imagem 2">
+                            <div class="search-icon">
+                                <a href="img/galeria-2.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-2"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <img src="img/galeria-3.png" class="img-fluid rounded w-100 h-100" alt="Galeria Imagem 3">
+                            <div class="search-icon">
+                                <a href="img/galeria-3.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-3"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="gallery-item">
+                            <img src="img/galeria-4.png" class="img-fluid rounded w-100 h-100" alt="Galeria Imagem 4">
+                            <div class="search-icon">
+                                <a href="img/galeria-4.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-4"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="gallery-item">
+                            <img src="img/galeria-5.png" class="img-fluid rounded w-100 h-100" alt="Galeria Imagem 5">
+                            <div class="search-icon">
+                                <a href="img/galeria-5.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-5"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="gallery-item">
+                            <img src="img/galeria-6.png" class="img-fluid rounded w-100 h-100" alt="Galeria Imagem 6">
+                            <div class="search-icon">
+                                <a href="img/galeria-6.png" class="btn btn-light btn-lg-square rounded-circle" data-lightbox="Gallery-6"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Galeria Fim -->
+
+        <!-- Faq Section -->
+        <section id="faq" class="faq section bg-ancora2-light" style="padding-top: 120px; padding-bottom: 150px;">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Perguntas Frequentes</h4>
+                <h1 class="display-5 mb-4">Tire suas dúvidas sobre consórcios</h1>
+                <p class="mb-0">
+                    Veja abaixo as dúvidas mais comuns que recebemos sobre consórcios, nossa parceria com a Âncora e como a SpartaFX pode te ajudar a conquistar seus sonhos com segurança e tranquilidade.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <h3>O que é um consórcio?</h3>
+                                <div class="faq-content">
+                                    <p>Consórcio é uma forma de compra planejada, na qual um grupo de pessoas contribui mensalmente para formar uma poupança comum e, por meio de sorteios ou lances, os participantes são contemplados com o valor para aquisição de bens ou serviços.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <h3>Como funciona a parceria da SpartaFX com a Âncora Consórcios?</h3>
+                                <div class="faq-content">
+                                    <p>A SpartaFX é representante oficial da Âncora Consórcios em Leme e região. Essa parceria nos permite oferecer planos completos, atendimento personalizado e a segurança de uma empresa com mais de 35 anos de mercado, autorizada pelo Banco Central.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <h3>Posso escolher o valor da carta de crédito?</h3>
+                                <div class="faq-content">
+                                    <p>Sim! Temos diversas opções de valores para se adequar à sua necessidade, seja para comprar um carro, uma moto, um imóvel ou até mesmo investir no seu negócio.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <h3>Quais são as formas de contemplação?</h3>
+                                <div class="faq-content">
+                                    <p>Você pode ser contemplado por sorteio ou ofertando lances. Os lances podem ser livres ou fixos, dependendo do grupo em que você estiver inserido.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <h3>Quais as vantagens de contratar com a SpartaFX?</h3>
+                                <div class="faq-content">
+                                    <p>Além da segurança e credibilidade da Âncora Consórcios, você conta com a consultoria personalizada da SpartaFX, que te orienta do início ao fim do processo de consórcio com transparência, clareza e total apoio.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                            <div class="faq-item">
+                                <h3>Como faço para começar?</h3>
+                                <div class="faq-content">
+                                    <p>Entre em contato conosco pelos telefones <a href="tel:+5519992726876">(19) 99272-6876</a> ou <a href="tel:+5519989326883">(19) 98932-6883</a> e converse com um dos nossos consultores. Vamos te ajudar a escolher o melhor plano para o seu objetivo.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Faq Section -->
+
+        <!-- Team Section -->
+        <section id="team" class="team section light-background mt-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Nossa Equipe</h4>
+                <h1 class="display-5 mb-4">Especialistas para ajudar você a conquistar seus sonhos</h1>
+                <p class="mb-0">
+                    Conheça os profissionais que trabalham com dedicação para oferecer segurança e confiança na realização dos seus objetivos com consórcios.
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="img/time-1.png" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Alex</h4>
+                                <span>Consultor de Consórcios</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="img/time-2.png" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Luciene</h4>
+                                <span>Especialista em Planejamento</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="img/time-1.png" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Alex</h4>
+                                <span>Consultor Financeiro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                        <div class="team-member">
+                            <div class="member-img">
+                                <img src="img/time-2.png" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href="#"><i class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Luciene</h4>
+                                <span>Atendimento Personalizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section -->
+
+        <!-- Depoimentos Início -->
+        <div class="container-fluid testimonial py-5 mt-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Depoimentos</h4>
+                    <h1 class="display-5 text-white mb-4">O que nossos clientes dizem</h1>
+                    <p class="text-white mb-0">A satisfação dos nossos clientes é a prova de que estamos no caminho certo. Veja o que dizem aqueles que confiaram na Âncora Consórcios para alcançar seus objetivos.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">"Fui muito bem atendido do início ao fim. A equipe da Âncora me explicou tudo com clareza, e hoje estou realizando o sonho do meu carro novo sem pagar juros abusivos."</p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="img/testimonial-1.jpg" class="img-fluid" alt="Imagem cliente 1">
+                                <div class="testimonial-quote btn-lg-square rounded-circle">
+                                    <i class="fa fa-quote-right fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-ancora2">Marcela Pereira</h4>
+                                <p class="text-start text-white">Cliente Consórcio Automóvel</p>
+                                <div class="d-flex text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">"Sempre tive receio com consórcios, mas com a Âncora me senti segura. Tirei minha carta de crédito rápido e sem complicações. Indico de olhos fechados."</p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="img/testimonial-2.jpg" class="img-fluid" alt="Imagem cliente 2">
+                                <div class="testimonial-quote btn-lg-square rounded-circle">
+                                    <i class="fa fa-quote-right fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-ancora2">Juliana Souza</h4>
+                                <p class="text-start text-white">Cliente Consórcio Imobiliário</p>
+                                <div class="d-flex text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-4">
+                        <p class="text-white fs-4 mb-4">"Já estou no meu segundo consórcio com a Âncora. O atendimento é humanizado e as condições são realmente vantajosas. Vale muito a pena!"</p>
+                        <div class="testimonial-inner">
+                            <div class="testimonial-img">
+                                <img src="img/testimonial-3.jpg" class="img-fluid" alt="Imagem cliente 3">
+                                <div class="testimonial-quote btn-lg-square rounded-circle">
+                                    <i class="fa fa-quote-right fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="ms-4">
+                                <h4 class="text-ancora2">Fernando Lima</h4>
+                                <p class="text-start text-white">Cliente Consórcio de Serviços</p>
+                                <div class="d-flex text-warning">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Depoimentos Fim -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <img src="img/logo_ancora.png" alt="logo_ancora" width="250px">
+                            </a>
+                            <p class="mb-3 mt-3 text-white">
+                                Representantes oficiais da <strong>Âncora Consórcios</strong> em Leme e região. A Âncora é referência nacional com planos completos e atendimento personalizado. <br> Na <strong>SpartaFX</strong>, você tem essa parceria para conquistar seu carro, casa ou moto com segurança e confiança.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <h4 class="text-ancora2 mb-2">Endereço & Telefones</h4>
+                            <p class="text-white mb-2">
+                               <i class="fas fa-map-marker-alt text-primary me-3"></i>R. Joaquim de Góes, 20 <br> Centro, Leme - SP, 13610-108
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">
+                                    <a href="tel:+5519992726876" class="text-white text-decoration-none">(19) 99272-6876</a> | 
+                                    <a href="tel:+5519989326883" class="text-white text-decoration-none">(19) 98932-6883</a>
+                                </p>
+                            </div>
+                            <h4 class="text-ancora2 mb-4 mt-3">Horário de Atendimento</h4>
+                            <div class="mb-3 pb-3">
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 me-auto">Segunda à Sexta:</h6>
+                                    <p class="mb-0 text-light"><i class="fas fa-clock text-primary me-2"></i> 08:00 - 18:00</p>
+                                </div>
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 mt-1 me-auto">Sábados:</h6>
+                                    <p class="mb-0 text-light"><i class="fas fa-clock text-primary me-2"></i> 08:00 - 12:00</p>
+                                </div>
+                                <div class="opening-clock flex-shrink-0">
+                                    <h6 class="text-white mb-0 mt-1 me-auto">Domingos e Feriados:</h6>
+                                    <p class="mb-0 text-light"><i class="fas fa-clock text-primary me-2"></i> Fechado</p>
+                                </div>
+                            </div>
+                            <!-- <div class="mt-4">
+                                <p class="text-white mb-2">Formas de Pagamento</p>
+                                <img src="img/payment.png" class="img-fluid" alt="Formas de Pagamento">
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-ancora2 mb-4">Links Rápidos</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Sobre Nós</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Benefícios</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Consórcios</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Planos</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contato</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-ancora2 mb-4">Suporte</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Política de Privacidade</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Termos e Condições</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Dúvidas Frequentes</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Ajuda</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End --> 
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4 bg-ancora">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body text-white">
+                            <i class="fas fa-copyright text-light me-2"></i>
+                            2025 © <strong class="text-light">SpartaFX</strong> - Todos os direitos reservados.
+                        </span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body text-white d-flex align-items-center justify-content-center justify-content-md-end gap-2">
+                        <span>Desenvolvido por:</span>
+                        <a href="#" class="text-white d-flex align-items-center">
+                            <img src="https://ik.imagekit.io/9f7b2kja5/visionary-logo/visionary-logo-horizontal-branco.webp?updatedAt=1739544693291" alt="Visionary Marketing Digital" width="280px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Botão de WhatsApp -->
+        <a href="https://wa.me/5519999999999" class="whatsapp-float" target="_blank" aria-label="Conversar no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Botão Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top-float">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
