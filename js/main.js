@@ -124,17 +124,16 @@
 
    // Back to top button
    $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
+    if ($(this).scrollTop() > 600) {
+        $('.back-to-top-float').fadeIn('slow').css('display', 'flex');
     } else {
-        $('.back-to-top').fadeOut('slow');
+        $('.back-to-top-float').fadeOut('slow');
     }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+    $('.back-to-top-float').click(function () {
+        $('html, body').animate({scrollTop: 0}, 300, 'easeInOutExpo');
         return false;
     });
-
 
     //Faq
     document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
@@ -142,6 +141,31 @@
         faqItem.parentNode.classList.toggle('faq-active');
         });
     });
+
+    // Data e Relógio em tempo real
+    function atualizarDataHora() {
+
+    const agora = new Date();
+    const utc = agora.getTime() + (agora.getTimezoneOffset() * 60000);
+    const brasilia = new Date(utc - (3 * 60 * 60000)); // UTC-3
+
+    const dias = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+    const diaSemana = dias[brasilia.getDay()];
+
+    const dia = String(brasilia.getDate()).padStart(2, '0');
+    const mes = String(brasilia.getMonth() + 1).padStart(2, '0');
+    const ano = brasilia.getFullYear();
+
+    const horas = String(brasilia.getHours()).padStart(2, '0');
+    const minutos = String(brasilia.getMinutes()).padStart(2, '0');
+
+    const texto = `${diaSemana}, ${dia}/${mes}/${ano} - ${horas}:${minutos}`;
+
+    document.getElementById("dataHora").textContent = texto;
+  }
+
+  setInterval(atualizarDataHora, 1000);
+  atualizarDataHora();
 
 })(jQuery);
 

@@ -15,14 +15,6 @@
 }
 /*** Spinner End ***/
 
-.back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    transition: 0.5s;
-    z-index: 99;
-}
-
 /*** Button Start ***/
 .btn {
     font-weight: 600;
@@ -94,6 +86,26 @@
     color: var(--bs-primary);
     background: var(--bs-light);
 }
+
+/*** Topbar Start ***/
+
+.topbar {
+  background-color: var(--bs-white);
+  color: var(--bs-ancora);
+  height: 40px;
+  padding: 0;
+  transition: all 0.5s;
+}
+
+.contato-telefone {
+    color: var(--bs-ancora) !important;
+}
+
+.contato-telefone:hover {
+    color: var(--bs-ancora2) !important;
+}
+
+/*** Navbar End ***/
 
 /*** Navbar Start ***/
 .nav-bar {
@@ -1070,17 +1082,19 @@
   color: white;
 }
 
-/* Botão Back to Top ajustado */
+/* Botão Back to Top */
 .back-to-top-float {
+  display: none;
   position: fixed;
   width: 50px;
   height: 50px;
+  font-size: 21px;
   bottom: 90px;
   right: 20px;
   z-index: 1000;
-  display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
 }
 
 .sombra-inferior {
