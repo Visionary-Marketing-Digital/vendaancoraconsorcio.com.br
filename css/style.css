@@ -1,6 +1,5 @@
+/*** Spinner Início ***/
 
-/*** Spinner Start ***/
-/*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -13,9 +12,9 @@
     visibility: visible;
     opacity: 1;
 }
-/*** Spinner End ***/
+/*** Spinner Fim ***/
 
-/*** Button Start ***/
+/*** Btn Início ***/
 .btn {
     font-weight: 600;
     transition: .5s;
@@ -87,7 +86,20 @@
     background: var(--bs-light);
 }
 
-/*** Topbar Start ***/
+.btn-icon {
+  width: 77px;
+  height: 77px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/*** Btn Fim ***/
+
+
+/*** Topbar Início ***/
 
 .topbar {
   background-color: var(--bs-white);
@@ -111,9 +123,9 @@
     }
 }
 
-/*** Top End ***/
+/*** Top Fim ***/
 
-/*** Navbar Start ***/
+/*** Navbar Início ***/
 .nav-bar {
     background: var(--bs-white);
 }
@@ -210,9 +222,9 @@
         font-size: 16px;
     }
 }
-/*** Navbar End ***/
+/*** Navbar Fim ***/
 
-/*** Carousel Hero Header Start ***/
+/*** Carousel Hero Header Início ***/
 .header-carousel .header-carousel-item img {
     object-fit: cover;
 }
@@ -314,9 +326,9 @@
 
     100% {width: 100%; height: 100%;}
 }
-/*** Carousel Hero Header End ***/
+/*** Carousel Hero Header Fim ***/
 
-/*** Single Page Hero Header Start ***/
+/*** Hero Header Início ***/
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
@@ -335,10 +347,10 @@
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
     color: var(--bs-white);
 }
-/*** Single Page Hero Header End ***/
+/*** Hero Header Fim ***/
 
 
-/*** Feature Start ***/
+/*** Feature Início ***/
 .feature .feature-item {
     position: relative;
     border-radius: 10px;
@@ -362,10 +374,10 @@
     position: relative;
     z-index: 5;
 }
-/*** Feature End ***/
+/*** Feature Fim ***/
 
 
-/*** Service Start ***/
+/*** Service Início ***/
 .service {
     position: relative;
     overflow: hidden;
@@ -451,10 +463,10 @@
 .service .service-item:hover .service-content a.h4:hover {
     color: var(--bs-white);
 }
-/*** Service End ***/
+/*** Service Fim ***/
 
 
-/*** Attractions Start ***/
+/*** Attractions Início ***/
 .attractions {
     position: relative;
     overflow: hidden;
@@ -578,10 +590,10 @@
     background: var(--bs-white);
     color: var(--bs-ancora2);
 }
-/*** Attractions End ***/
+/*** Attractions Fim ***/
 
 
-/*** Gallery Start ***/
+/*** Gallery Início ***/
 .gallery .gallery-item {
     position: relative;
     overflow: hidden;
@@ -629,11 +641,9 @@
 .gallery .gallery-item:hover .search-icon {
     opacity: 1;
 }
-/*** Gallery End ***/
+/*** Gallery Fim ***/
 
-/*--------------------------------------------------------------
-# Faq Section
---------------------------------------------------------------*/
+/*** Faq Início ***/
 .faq .faq-container .faq-item {
   background-color: rgba(4, 196, 202, 0.03);
   position: relative;
@@ -716,7 +726,9 @@
   color: var(--bs-ancora2);
 }
 
-/*** Blog Start ***/
+/*** Faq Fim ***/
+
+/*** Blog Início ***/
 .blog .blog-item {
     border-radius: 10px;
 }
@@ -782,9 +794,9 @@
     color: var(--bs-ancora2);
 }
 
-/*** Blog End ***/
+/*** Blog Fim ***/
 
-/*** Time Start ***/
+/*** Time Início ***/
 .team .team-member {
   background-color: rgba(4, 196, 202, 0.03);
   overflow: hidden;
@@ -853,9 +865,9 @@
   opacity: 1;
   bottom: 15px;
 }
-/*** Time End ***/
+/*** Time Fim ***/
 
-/*** Testimonial Start ***/
+/*** Testimonial Início ***/
 .testimonial {
     position: relative;
     overflow: hidden;
@@ -1005,10 +1017,10 @@
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: var(--bs-primary);
 }
-/*** Testimonial End ***/
+/*** Testimonial Fim ***/
 
 
-/*** Footer Start ***/
+/*** Footer Início ***/
 .footer {
     background: var(--bs-ancora);
 }
@@ -1054,21 +1066,21 @@
     align-items: center;
     line-height: 35px;
 }
-/*** Footer End ***/
+/*** Footer Fim ***/
 
-/*** copyright Start ***/
+/*** copyright Início ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark);
 }
-/*** copyright end ***/
+/*** copyright Fim ***/
 
-/* Botão flutuante do WhatsApp */
+/*** Botão flutuante do WhatsApp Início ***/
 .whatsapp-float {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 20px; /* distância da base */
+  bottom: 20px;
   right: 20px;
   background-color: #25D366;
   color: white;
@@ -1088,7 +1100,9 @@
   color: white;
 }
 
-/* Botão Back to Top */
+/*** Botão flutuante do WhatsApp Fim ***/
+
+/*** Botão Back to Top Início ***/
 .back-to-top-float {
   display: none;
   position: fixed;
@@ -1103,16 +1117,9 @@
   transition: 0.2s;
 }
 
+/*** Botão Back to Top Início ***/
+
+/*** Extras ***/
 .sombra-inferior {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.20);
-}
-
-.btn-icon {
-  width: 77px;
-  height: 77px;
-  margin-right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
 }
