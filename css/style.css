@@ -105,7 +105,13 @@
     color: var(--bs-ancora2) !important;
 }
 
-/*** Navbar End ***/
+@media (max-width: 799px) {
+    .topbar {
+        display: none !important;
+    }
+}
+
+/*** Top End ***/
 
 /*** Navbar Start ***/
 .nav-bar {
@@ -1099,4 +1105,14 @@
 
 .sombra-inferior {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.20);
+}
+
+.btn-icon {
+  width: 77px;
+  height: 77px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
