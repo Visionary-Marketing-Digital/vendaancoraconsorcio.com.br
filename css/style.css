@@ -1103,6 +1103,27 @@
 }
 /*** Footer Fim ***/
 
+@media (max-width: 358px){
+    .contato-footer-p{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 323px){
+    .contato-footer-p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 295px){
+    .contato-footer-p{
+        font-size: 10px;
+    }
+
+}
+
 /*** copyright Início ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1153,6 +1174,25 @@
 }
 
 /*** Botão Back to Top Início ***/
+
+@media (max-width: 410px){
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        right: 20px;
+        font-size: 30px;
+    }
+    .back-to-top-float {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 80px;
+        right: 20px;
+    }
+
+}
+
+/*** Botão flutuante do WhatsApp Fim ***/
 
 /*** Extras ***/
 .sombra-inferior {
