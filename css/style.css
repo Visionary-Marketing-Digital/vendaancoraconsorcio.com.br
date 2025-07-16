@@ -803,7 +803,7 @@
   background-color: rgba(4, 196, 202, 0.03);
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
   height: 100%;
 }
 
@@ -860,7 +860,7 @@
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: color-mix(in srgb, var(--bs-ancora), transparent 40%);
+  color: color-mix(in srgb, var(--bs-ancora), transparent 25%);
 }
 
 .team .team-member:hover .social {
