@@ -1024,6 +1024,10 @@
 
 /*** Contato Início ***/
 
+.contato-p a:hover{
+    color: var(--bs-ancora2) !important;
+}
+
 @media (max-width: 390px){
     .contato-p{
         font-size: 14px;
