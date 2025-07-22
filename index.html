@@ -767,32 +767,31 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="ticket-form p-5">
-                                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                                 <h4 class="text-primary">Contato</h4>
                                 <h1 class="display-5 text-ancora mb-4">Envie sua mensagem</h1>
                             </div>
-                            <form>
+                                <form id="formContato" action="https://script.google.com/macros/s/AKfycbzs3_kwtiqKdfIaj8zmP8uZD20-6opD_sKl4YSDFgRAz1rBQeRTOkTOiSfNEy2WRdUxNA/exec" method="post">
                                 <div class="row g-4">
                                     <div class="col-12 col-md-6">
-                                        <input type="text" class="form-control py-2" placeholder="Seu nome" required>
+                                    <input type="text" class="form-control py-2" name="Nome" placeholder="Seu nome" required>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <input type="email" class="form-control py-2" placeholder="Seu e-mail" required>
+                                    <input type="email" class="form-control py-2" name="Email" placeholder="Seu e-mail" required>
                                     </div>
                                     <div class="col-12">
-                                        <input type="text" class="form-control py-2" placeholder="Assunto" required>
+                                    <input type="text" class="form-control py-2" name="Telefone" id="telefoneContato" placeholder="Telefone" required>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control py-2" rows="5" placeholder="Mensagem" required></textarea>
+                                    <textarea class="form-control py-2" name="Mensagem" rows="5" placeholder="Mensagem" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn btn-primary w-100 py-2 px-5">Enviar mensagem</button>
+                                    <button type="submit" class="btn btn-primary w-100 py-2 px-5">Enviar mensagem</button>
                                     </div>
                                 </div>
-                            </form>
+                                </form>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

@@ -32,8 +32,8 @@
     dots: false,
     loop: false,
     nav : true,
-    mouseDrag: false,   // <-- desativa arrasto com o mouse
-    touchDrag: false,   // <-- desativa arrasto com o dedo
+    mouseDrag: false,
+    touchDrag: false,
     navText : [
       '<i class="bi bi-arrow-left"></i>',
       '<i class="bi bi-arrow-down"></i>'
@@ -137,44 +137,75 @@
   setInterval(atualizarDataHora, 1000);
   atualizarDataHora();
 
-  // Aqui vamos garantir que o DOM está pronto para manipular formulários e máscara
+  // DOM Ready
   $(document).ready(function () {
 
-    // Form submit com AJAX, evitando recarregar página
+    // Máscaras
+    $('#phone').mask('(00) 00000-0000');
+    $('#telefoneContato').mask('(00) 00000-0000');
+    $('#valorDesejado').mask('R$ 000.000.000,00', {reverse: true});
+
+    // Envio formulário de simulação (formLead)
     $('#formLead').submit(function(e) {
-        e.preventDefault();
+      e.preventDefault();
 
-        // Remove "R$" do campo de valor antes de enviar
-        var valorOriginal = $('#valorDesejado').val();
-        var valorFormatado = valorOriginal.replace('R$', '').trim();
-        $('#valorDesejado').val(valorFormatado);
+      // Remove "R$" antes de enviar
+      var valorOriginal = $('#valorDesejado').val();
+      var valorFormatado = valorOriginal.replace(/[R$\s.]/g, '').replace(',', '.').trim(); // tira R$, espaços, pontos e troca vírgula por ponto para número decimal
+      $('#valorDesejado').val(valorFormatado);
 
-        var dados = $(this).serialize();
+      var dados = $(this).serialize();
 
-        // Restaura o valor com "R$" no input (opcional, para a experiência do usuário)
-        $('#valorDesejado').val(valorOriginal);
+      // Restaura o valor para o usuário
+      $('#valorDesejado').val(valorOriginal);
 
-        $.post($(this).attr('action'), dados)
-            .done(function(resposta) {
-            $('#formLead')[0].reset();
-            var modal = new bootstrap.Modal(document.getElementById('modalSucesso'));
-            modal.show();
+      $.post($(this).attr('action'), dados)
+        .done(function() {
+          $('#formLead')[0].reset();
 
-            setTimeout(function () {
-                modal.hide();
-            }, 4000); // Fecha o modal após 4 segundos
+          var modal = new bootstrap.Modal(document.getElementById('modalSucesso'));
+          $('#modalSucesso .modal-body').text('Agradecemos sua solicitação, entraremos em contato em breve.');
+          modal.show();
+
+          setTimeout(function () {
+            modal.hide();
+          }, 4000);
+        })
+        .fail(function() {
+          alert('Erro no envio, tente novamente.');
         });
     });
 
+        // Envio formulário de contato (formContato)
+        $('#formContato').submit(function (e) {
+        e.preventDefault();
 
-    // Máscara do telefone
-    $('#phone').mask('(00) 00000-0000');
+        const form = $(this);
+        const dados = form.serialize();
 
-    $(document).ready(function() {
-        // Máscara para o campo de valor com R$
-        $('#valorDesejado').mask('R$ 000.000.000,00', {reverse: true});
+        $.ajax({
+        url: form.attr('action'),
+        method: 'POST',
+        data: dados,
+        dataType: 'json',
+        success: function (response) {
+            if (response.result === 'success') {
+            form[0].reset();
+
+            const modal = new bootstrap.Modal(document.getElementById('modalSucesso'));
+            modal.show();
+
+            setTimeout(() => modal.hide(), 4000);
+            } else {
+            alert('Erro ao enviar. Resposta inesperada do servidor.');
+            }
+        },
+        error: function (xhr, status, error) {
+            console.error('Erro:', status, error);
+            alert('Erro ao enviar. Tente novamente.');
+        }
+        });
     });
-
 
   });
 
