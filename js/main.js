@@ -149,15 +149,7 @@
     $('#formLead').submit(function(e) {
       e.preventDefault();
 
-      // Remove "R$" antes de enviar
-      var valorOriginal = $('#valorDesejado').val();
-      var valorFormatado = valorOriginal.replace(/[R$\s.]/g, '').replace(',', '.').trim(); // tira R$, espaços, pontos e troca vírgula por ponto para número decimal
-      $('#valorDesejado').val(valorFormatado);
-
       var dados = $(this).serialize();
-
-      // Restaura o valor para o usuário
-      $('#valorDesejado').val(valorOriginal);
 
       $.post($(this).attr('action'), dados)
         .done(function() {
