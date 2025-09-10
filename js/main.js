@@ -159,6 +159,12 @@
           $('#modalSucesso .modal-body').text('Agradecemos sua solicitação, entraremos em contato em breve.');
           modal.show();
 
+          // Evento personalizado específico do formulário
+          fbq('track', 'LeadModalSucesso', {
+            content_name: 'Formulário Lead SpartaFX',
+            status: 'sucesso'
+          });
+
           setTimeout(function () {
             modal.hide();
           }, 4000);
@@ -186,6 +192,12 @@
 
             const modal = new bootstrap.Modal(document.getElementById('modalSucesso'));
             modal.show();
+
+            //  Dispara evento de conversão no Meta Pixel
+            fbq('track', 'LeadModalSucesso', {
+              content_name: 'Formulário Lead SpartaFX',
+              status: 'sucesso'
+            });
 
             setTimeout(() => modal.hide(), 4000);
             } else {
